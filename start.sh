@@ -2,4 +2,7 @@
 
 service nginx start
 
-java -jar /app/app.jar
+tail -F /var/log/nginx/error.log &
+tail -F /var/log/nginx/access.log &
+
+exec java -jar /app/app.jar
