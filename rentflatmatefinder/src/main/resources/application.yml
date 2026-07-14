@@ -45,7 +45,7 @@ openai:
     Compute a compatibility score from 0 to 100 based on budget and location match and return JSON exactly like: {"score": <number>, "explanation": "<string>"}
 
 app:
-  frontend-url: http://localhost:4200
+  frontend-url: ${FRONTEND_URL:http://localhost:4200}
   admin:
     email: ${ADMIN_EMAIL:admin@rentflatmatefinder.com}
     password: ${ADMIN_PASSWORD:Admin123!}
