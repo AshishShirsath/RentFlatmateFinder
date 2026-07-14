@@ -11,7 +11,7 @@ RUN npm install
 
 COPY rentflatmatefinder-ui .
 
-RUN npm run build --configuration production
+RUN npx ng build rentflatmatefinder-ui --configuration production
 
 
 ############################
