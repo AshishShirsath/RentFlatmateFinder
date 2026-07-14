@@ -3,9 +3,9 @@ spring:
     name: rent-flatmate-finder
 
   datasource:
-    url: jdbc:mysql://localhost:3306/rent_flatmate_finder
-    username: root
-    password:
+    url: jdbc:mysql://13.234.48.249:3306/rent_flatmate_finder
+    username: rentuser
+    password: 1234
     driver-class-name: com.mysql.cj.jdbc.Driver
 
   jpa:
